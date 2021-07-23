@@ -21,7 +21,7 @@
             {
                 transform.position += Vector3.right * speed * Time.deltaTime;
             }
-            /*
+            
             if (Input.GetKey(KeyCode.UpArrow))
             {
                 transform.position += Vector3.up * speed * Time.deltaTime;
@@ -30,6 +30,6 @@
             {
                 transform.position += Vector3.down * speed * Time.deltaTime;
             }
-            */
+            
         }
  }
