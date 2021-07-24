@@ -15,17 +15,17 @@ public class Shape : MonoBehaviour
         //transform.position = position;
         transform.localScale = scale;
         GameObject camera = GameObject.Find("Main Camera");
-        ShapeGenerator shape = camera.GetComponent<ShapeGenerator>();
+        ShapeGenerator shape = camera.GetComponent<ShapeGenerator>(); //gets the shapes fallspeed from shape generator script
         speed = shape.fallSpeed;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(transform.position.y <= 700)
+        if(transform.position.y <= 700) //checks if shape is at bottom then deletes itself
         {
             Destroy (gameObject);
         }
-       transform.position = new Vector3(transform.position.x, transform.position.y - speed, transform.position.z);
+       transform.position = new Vector3(transform.position.x, transform.position.y - speed, transform.position.z); //decreases its y position
     }
 }

@@ -614,6 +614,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myPrefab: {fileID: 8795457185187188918, guid: 4c163932e649043949029c75f214c01c, type: 3}
+  maxTime: 5
+  minTime: 1
+  fallSpeed: 0.5
 --- !u!1 &1929833161
 GameObject:
   m_ObjectHideFlags: 0
