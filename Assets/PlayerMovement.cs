@@ -14,6 +14,7 @@
         }
          void Update ()
          {
+             //moves shape left and right
             if (Input.GetKey(KeyCode.E) && transform.position.x > -720)
             {
                 transform.position += Vector3.left * speed * Time.deltaTime;
@@ -23,6 +24,7 @@
                 transform.position += Vector3.right * speed * Time.deltaTime;
             }
 
+            //rotates shape
             if (Input. GetKeyDown ("a")) {
             transform. Rotate (0, rotation, 0);
             }
